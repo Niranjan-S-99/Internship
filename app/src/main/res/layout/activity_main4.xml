@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="#951414"
+    android:outlineProvider="bounds"
+    android:outlineSpotShadowColor="#E040FB"
+    android:padding="10dp"
+    tools:context=".MainActivity4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp">
+
+
+        <TextView
+            android:id="@+id/usr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/completed"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/text_round"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/user"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toEndOf="@+id/completedver"
+            android:background="@color/white"
+            android:gravity="start"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/verifytick"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="353dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/completed"
+            android:background="@drawable/tickcircle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/completedver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:padding="5dp"
+            android:text="@string/completed"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/received_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_round"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/received_amount"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usr"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-7dp"
+            android:background="@drawable/text_round"
+            android:padding="10dp"
+            android:text="@string/detail5"
+            android:textColor="@color/black"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tickani"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="169dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            tools:text="@string/largetext">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/tickani"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/received_amt"
+            android:layout_alignStart="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/received_amount"
+            android:src="@drawable/sakuracircle">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/verifytick2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/usr"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/tickcircle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/verifytick3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/verifytick2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/tickcircle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/verifytick4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/verifytick3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/tickcircle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/verifytick5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/verifytick4"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/tickcircle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/verifytick6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/verifytick5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/tickcircle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifytick5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="start|center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_bankAcct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usr"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="50dp"
+            android:animationCache="true"
+            android:backgroundTint="#FFFFFF"
+            android:outlineAmbientShadowColor="#050505"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/chooseAccount"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bankacct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="45dp"
+                android:gravity="start"
+                android:text="@string/bankAccount"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="@string/bankAccount"
+                android:src="@drawable/banklogo" />
+
+            <TextView
+                android:id="@+id/poweredby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bankacct"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="180dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/powered"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="UnknownId" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/transaction_historybutton"
+            android:layout_width="248dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cardview_bankAcct"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:onClick="transaction_histroy"
+            android:text="@string/histroy"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+

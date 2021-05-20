@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Intern Bank</string>
+    <string name="join">Join With Us </string>
+    <string name="button">BUTTON </string>
+    <string name="buttonadd">BUTTON Add </string>
+    <string name="sakura">SAKURA HARUNO\n +918678****28 </string>
+    <string name="email">E-mail </string>
+    <string name="report">Report </string>
+    <string name="contactUs">Contact Us </string>
+    <string name="hint">\u20B9 ENTER THE AMOUNT HERE </string>
+    <string name="pay">PAY </string>
+    <string name="message">MESSAGE </string>
+    <string name="detail5">
+        <br>Receiver Name: SAKURA HARUNO\n</br>
+         <br>\n</br>
+        <br>Account NO: 356987564123698754\n</br>
+        <br>\n</br>
+        <br>E-mail: saku67@gmail.com\n</br>
+        <br>\n</br>
+        <br>BANK NAME: Intern BANK\n</br>
+        <br>\n</br>
+        <br>TRANSACTION ID: </br>
+    </string>
+    <string name="user">Transaction Details: </string>
+    <string name="largetext">Large text </string>
+    <string name="rs"><br>\u20B9 </br></string>
+    <string name="send">Send </string>
+    <string name="sender">Sender </string>
+    <string name="receiver">Receiver </string>
+    <string name="received_amount">Received Amount: </string>
+    <string name="completed">Completed on : </string>
+    <string name="powered">Powered By Intern Bank </string>
+    <string name="welcome">Welcome to Intern Bank..... </string>
+    <string name="balance">View Account Balance</string>
+    <string name="histroy">Transaction History</string>
+    <string name="view">Button View</string>
+    <string name="chooseAccount">Bank Account Chosen for Transaction:</string>
+    <string name="bankAccount">  <br>Intern Bank Acc.NO***8754\n</br>
+                                  <br>\n</br>
+                                 <br>Transaction: sakura@fs.interbank\n</br>
+                                 <br>\n</br>
+                                 <br>Account Type: Saving Account\n</br>
+                                <br>\n</br>
+
+
+    </string>
+    <string name="debited">Debited Amount:</string>
+
+</resources>

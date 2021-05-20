@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <RelativeLayout
+        android:id="@+id/r21"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/text_round"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/arrow_button"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/sender"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@drawable/text_round"
+            android:onClick="arr" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/sakuracircle"
+            android:layout_alignStart="@+id/arrow_button"
+            android:background="@drawable/text_round"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/sakura"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/text_round"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:gravity="center"
+            android:text="@string/sakura"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="535dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/r22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient2"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/hint"
+                android:src="@drawable/a">
+
+            </ImageView>
+
+            <EditText
+                android:id="@+id/money_editText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/receiver"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="90dp"
+                android:hint="@string/hint"
+                android:gravity="center"
+                android:background="@drawable/round_button"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:text="@string/rs"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                android:importantForAutofill="no"/>
+
+
+            <TextView
+                android:id="@+id/pay"
+                android:layout_width="248dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/money_editText"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="81dp"
+                android:layout_marginBottom="200dp"
+                android:background="@drawable/round_button"
+                android:gravity="center"
+                android:text="@string/pay"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/fg"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sender"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|center"
+                android:layout_marginTop="220dp"
+                android:layout_marginEnd="85dp"
+                android:visibility="gone"
+                android:indeterminateTint="@color/white">
+
+            </ProgressBar>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/saicircle"
+                android:background="@drawable/text_round"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/pay"
+                />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/sakuracircle"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/text_round"
+                android:layout_marginEnd="35dp"
+                android:contentDescription="@string/pay"
+                />
+
+            <TextView
+                android:layout_width="90dp"
+                android:id="@+id/sender"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/sender"
+                android:textStyle="italic"
+                android:layout_below="@id/imageView3"
+                android:layout_alignStart="@id/imageView3"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/receiver"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView4"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/sender"
+                android:layout_alignStart="@id/imageView4"
+                android:textStyle="italic"
+                android:text="@string/receiver"
+                android:textColor="@color/white"
+                android:textSize="12sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/animation_arrow"
+                android:layout_width="185dp"
+                android:layout_height="73dp"
+                android:layout_below="@id/imageView2"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toStartOf="@+id/imageView4"
+                android:contentDescription="@string/receiver"
+                android:foregroundGravity="center"
+
+                android:src="@drawable/arrow">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_bankAcct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/money_editText"
+                android:layout_marginTop="190dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/chooseAccount"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="start"
+                    android:text="@string/bankAccount"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="75dp"
+                    android:contentDescription="@string/bankAccount"
+                    android:src="@drawable/banklogo" />
+
+                <TextView
+                    android:id="@+id/poweredby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardview_bankAcct"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/powered"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    tools:ignore="UnknownId" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/text_round"
+             android:layout_marginTop="10dp"
+             android:padding="5dp"
+             >
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/message_roundbutton"
+            android:layout_marginEnd="155dp"
+            android:layout_alignBottom="@+id/be"
+            android:textColor="@color/white"
+            android:hint="@string/message"
+            android:inputType="text"
+            android:text="@string/message"
+            android:importantForAutofill="no" />
+
+             <Button
+                 android:id="@+id/be"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignStart="@+id/editTextTextPersonName"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginStart="280dp"
+                 android:background="@drawable/message_roundbutton"
+                 android:layout_marginEnd="10dp"
+                 android:gravity="center"
+                 android:padding="10dp"
+                 android:text="@string/send"
+                 android:textColor="@color/white">
+
+             </Button>
+
+
+         </RelativeLayout>
+
+
+
+</LinearLayout>
